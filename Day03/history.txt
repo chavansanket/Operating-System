@@ -1,0 +1,55 @@
+ 1339  tty
+ 1340  whoami
+ 1341  who am i
+ 1342  who
+ 1343  w
+ 1344  ls /
+ 1345  ls /boot/
+ 1346  cat /proc/cpuinfo 
+ 1347  top
+ 1349  date
+ 1350  man date
+ 1351  man man
+ 1352  man open
+ 1353  man fopen
+ 1354  cat /etc/apt/sources.list
+ 1355  man 2 open
+ 1356  man printf
+ 1357  man 3 printf
+ 1358  man man
+ 1360  gcc --version
+ 1361  gcc -v
+ 1362  cal
+ 1363  cal -y 2023
+ 1364  pwd
+ 1365  mkdir march23
+ 1366  ls
+ 1367  cd march23/
+ 1368  pwd
+ 1370  mkdir dac desd dmc kdac
+ 1371  ls
+ 1372  cd dac/
+ 1373  pwd
+ 1374  cd ~
+ 1375  cd -
+ 1376  pwd
+ 1377  touch file1.txt
+ 1378  ls
+ 1379  touch file2.txt file3.txt file4.txt
+ 1380  ls
+ 1381  ls -l
+ 1382  ls -l /boot/
+ 1383  ls -l /dev/
+ 1384  ls -a
+ 1385  touch .hidden.txt
+ 1386  ls
+ 1387  ls -a
+ 1388  cd .
+ 1389  cd ..
+ 1390  ls -A
+ 1391  cd dac/
+ 1392  ls -A
+ 1393  ls -a
+ 1394  man ls
+ 1395  ls -i
+ 1396  history
