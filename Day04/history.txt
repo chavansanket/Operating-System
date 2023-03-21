@@ -1,0 +1,197 @@
+ 1342  cd dac/
+ 1343  ls
+ 1344  mkdir one two three four
+ 1345  ls
+ 1346  ls -l
+ 1347  touch file1.txt 
+ 1348  ls -l
+ 1349  cat > file1.txt
+ 1350  cat file1.txt 
+ 1351  cat >> file1.txt 
+ 1352  cat file1.txt 
+ 1353  cat > file1.txt 
+ 1354  cat file1.txt 
+ 1355  ls
+ 1356  cat file1.txt 
+ 1357  cp file1.txt copy.txt
+ 1358  ls
+ 1359  cat copy.txt 
+ 1360  cp file1.txt four/
+ 1361  ls
+ 1362  ls four/
+ 1363  cp file1.txt four/copy.txt
+ 1364  ls four/
+ 1365  cp four copy
+ 1366  ls
+ 1367  cp -r four copy
+ 1368  ls
+ 1369  ls four/
+ 1370  ls copy
+ 1371  ls
+ 1372  rm file4.txt 
+ 1373  ls
+ 1374  rmdir three/
+ 1375  ls
+ 1376  rmdir four/
+ 1377  rm -r four/
+ 1378  ls
+ 1379  mv file1.txt test.txt
+ 1380  ls
+ 1381  ls copy
+ 1382  rm copy/*
+ 1383  ls copy
+ 1384  ls
+ 1385  mv copy.txt two/
+ 1386  ls
+ 1387  ls two/
+ 1388  ps
+ 1389  ps -e
+ 1390  top
+ 1391  alias list="ls -l -i"
+ 1392  list
+ 1393  unalias list 
+ 1394  list
+ 1395  cat > numbers.txt
+ 1396  cat numbers.txt 
+ 1397  head numbers.txt 
+ 1398  tail numbers.txt 
+ 1399  head -7 numbers.txt 
+ 1400  tail -5 numbers.txt 
+ 1401  cat numbers.txt 
+ 1402  rev numbers.txt 
+ 1403  tac numbers.txt 
+ 1404  cat numbers.txt 
+ 1405  sort numbers.txt 
+ 1406  sort -n numbers.txt 
+ 1407  sort -r -n numbers.txt 
+ 1408  ls -l
+ 1409  ls -l -h
+ 1410  which ls
+ 1411  which gcc
+ 1412  cat numbers.txt 
+ 1413  uniq numbers.txt 
+ 1414  sort numbers.txt 
+ 1415  ls -l
+ 1416  ls -l > lsout.txt
+ 1417  cat lsout.txt 
+ 1418  ls -W
+ 1419  ls -W > lserr.txt
+ 1420  ls -W 2> lserr.txt
+ 1421  cat lserr.txt 
+ 1422  ls -l
+ 1423  ls -l > lsout.txt
+ 1424  cat lsout.txt 
+ 1425  ls -W
+ 1426  ls -W 2> lserr.txt
+ 1427  cat lserr.txt 
+ 1428  man wc
+ 1429  ls
+ 1430  wc test.txt 
+ 1431  cat test.txt 
+ 1432  wc -l test.txt 
+ 1433  wc -w test.txt 
+ 1434  wc -c test.txt 
+ 1435  wc test.txt 
+ 1436  wc < test.txt 
+ 1437  wc < test.txt > out.txt 2> err.txt
+ 1438  cat out.txt 
+ 1439  cat err.txt 
+ 1440  wc -X < test.txt > out.txt 2> err.txt
+ 1441  cat out.txt 
+ 1442  cat err.txt 
+ 1443  cat numbers.txt 
+ 1444  sort numbers.txt 
+ 1445  sort numbers.txt > sorted.txt
+ 1446  cat sorted.txt 
+ 1447  cat numbers.txt 
+ 1448  uniq sorted.txt 
+ 1449  sort numbers.txt 1> sorted.txt
+ 1450  sort numbers.txt | uniq 
+ 1451  who
+ 1452  who | wc
+ 1453  cat numbers.txt 
+ 1454  cat numbers.txt | head -5 
+ 1455  cat numbers.txt | head -5 | tail -3
+ 1456  echo "Hello DAC"
+ 1457  echo "Hello       DAC"
+ 1458  echo "Hello       DAC" | tr -s " "
+ 1459  echo "Hello DAC" | tr " " "@"
+ 1460  echo "Hello DAC" | tr " " "\n"
+ 1461  echo "Hello DAC" 
+ 1462  echo "Hello DAC" | tr "a-z" "A-Z"
+ 1463  echo "Hello DAC" | tr "A-Z" "a-z"
+ 1464  echo "Hello DAC" | tr "A-Z|a-z" "a-z|A-Z"
+ 1465  clear
+ 1466  ls
+ 1467  find -type f .
+ 1468  find -type f 
+ 1469  find -type f
+ 1470  find -type d
+ 1471  find -type l /boot/
+ 1472  find /boot/ -type l 
+ 1473  ls
+ 1474  find . -name out.txt 
+ 1475  find . -name copy
+ 1476  ls -l
+ 1477  find . -size 4k
+ 1478  man grep
+ 1479  cat > taste.txt
+ 1480  cat taste.txt 
+ 1481  grep "is" taste.txt 
+ 1482  grep -c "is" taste.txt 
+ 1483  grep "is" taste.txt 
+ 1484  grep -n "is" taste.txt 
+ 1485  grep -w "is" taste.txt 
+ 1486  grep "Is" taste.txt 
+ 1487  grep -i "Is" taste.txt 
+ 1488  grep -v "Is" taste.txt 
+ 1489  grep -v "is" taste.txt 
+ 1490  grep "is" taste.txt 
+ 1491  grep "^is" taste.txt 
+ 1492  grep "is$" taste.txt 
+ 1493  grep "^is$" taste.txt 
+ 1494  cat > pattern.txt
+ 1495  cat pattern.txt 
+ 1496  grep "dac" pattern.txt 
+ 1497  grep "d[a]c" pattern.txt 
+ 1498  grep "d[ae]c" pattern.txt 
+ 1499  grep "d[aei]c" pattern.txt 
+ 1500  grep "d[^aei]c" pattern.txt 
+ 1501  grep "d.c" pattern.txt 
+ 1502  grep "d*c" pattern.txt 
+ 1503  grep -w "d*c" pattern.txt 
+ 1504  grep "d\*c" pattern.txt 
+ 1505  grep "d[*]c" pattern.txt 
+ 1506  grep -F "d*c" pattern.txt 
+ 1507  fgrep "d*c" pattern.txt 
+ 1508  cat > repeat.txt
+ 1509  grep "dc" repeat.txt 
+ 1510  grep "d*c" repeat.txt 
+ 1511  grep "d.c" repeat.txt 
+ 1512  grep "d?c" repeat.txt 
+ 1513  grep -E "d?c" repeat.txt 
+ 1514  grep -E "da?c" repeat.txt 
+ 1515  egrep "da?c" repeat.txt 
+ 1516  egrep "da+c" repeat.txt 
+ 1517  egrep "da{2}c" repeat.txt 
+ 1518  egrep "da{4}c" repeat.txt 
+ 1519  egrep "da{2,}c" repeat.txt 
+ 1520  egrep "da{,4}c" repeat.txt 
+ 1521  egrep "da{2,4}c" repeat.txt 
+ 1522  cat > courses.txt
+ 1523  grep "is" taste.txt 
+ 1524  grep "(is)" taste.txt 
+ 1525  egrep "(is)" taste.txt 
+ 1526  cat > courses.txt
+ 1527  egrep "d(bd)a" courses.txt 
+ 1528  cat >> courses.txt
+ 1529  egrep "d(bd)a" courses.txt 
+ 1530  cat courses.txt 
+ 1531  egrep "d(bd|es)a" courses.txt 
+ 1532  egrep "d(bd|es){1}a" courses.txt 
+ 1533  egrep "d(bd|es){2}a" courses.txt 
+ 1534  vim first.txt
+ 1535  ls /lib/modules/5.4.73-ldd/
+ 1536  ls -R /lib/modules/5.4.73-ldd/
+ 1537  history
+ 
